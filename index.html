@@ -71,14 +71,14 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}.swiper{height:80vh;}.swiper-slide{height:80vh !important;}.swiper-slide-content{bottom:15%;}
+* { box-sizing: border-box; } body {margin: 0;}.swiper{height:80vh;}.swiper-slide{height:80vh !important;}.swiper-slide-content{bottom:15%;}.swiper-slide img{height:100%;}.swiper-button-next{color:white;}.swiper-button-prev{color:white;}
 
 </style>
 
 </head>
 		<html>
  <head></head>
- <body class="bg-secondary" id="i212">
+ <body class="bg-secondary pb-5" id="i212">
   <div id="idgl">
    <div class="swiper w-100 testimonial-swiper-one my-4 border">
     <div class="swiper-wrapper">
@@ -129,6 +129,51 @@
      </div>
     </div>
     <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+   </div>
+  </div>
+  <div id="ixjpl">
+   <div class="swiper w-100 testimonial-swiper-two my-4">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">First Slide</p>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">Second Slide</p>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">Third Slide</p>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">Fourth Slide</p>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">Fifth Slide</p>
+      </div>
+     </div>
+     <div class="swiper-slide position-relative">
+      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
+      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column swiper-slide-content text-center">
+       <p class="fs-5 mb-2">Sixt Slide</p>
+      </div>
+     </div>
+    </div>
+    <div class="swiper-button-next" id="id7gh"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
@@ -186,6 +231,107 @@
                     type: 'bullets',
                 },
                 autoplay: true,
+            });
+        }
+}.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#ixjpl');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+// Check if Swiper CSS is already added
+        if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
+            // Dynamically add Swiper CSS to the head element
+            const swiperCssLink = document.createElement('link');
+            swiperCssLink.rel = 'stylesheet';
+            swiperCssLink.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+            document.head.appendChild(swiperCssLink);
+        }
+        // Check if Swiper JS is already added
+        if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]')) {
+            // Dynamically add Swiper JS to the head element
+            const swiperJsScript = document.createElement('script');
+            swiperJsScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+            document.head.appendChild(swiperJsScript);
+            // Wait for the Swiper JS to be loaded before initializing
+            swiperJsScript.onload = function () {
+                // Swiper initialization
+                // @ts-ignore
+                let swiper = new Swiper(".testimonial-swiper-two", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    },
+                    // autoplay: true,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                        1440: {
+                            slidesPerView: 4,
+                            spaceBetween: 60,
+                        },
+                        1800: {
+                            slidesPerView: 5,
+                            spaceBetween: 70
+                        }
+                    },
+                });
+            };
+        }
+        else {
+            // Swiper JS is already added, directly initialize Swiper
+            // @ts-ignore
+            let swiper = new Swiper(".testimonial-swiper-two", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                // autoplay: true,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                        spaceBetween: 60,
+                    },
+                    1800: {
+                        slidesPerView: 5,
+                        spaceBetween: 70
+                    }
+                },
             });
         }
 }.bind(items[i]))();
