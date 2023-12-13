@@ -79,7 +79,7 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="iwpi">
+  <div id="i0ry">
    <div class="swiper w-100 testimonial-swiper-one my-4 border">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
@@ -101,12 +101,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next" id="iqk2i"></div>
+    <div class="swiper-button-next" id="i4vzc"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <div id="i3o6b">
+  <div id="irio8">
    <div class="swiper w-100 testimonial-swiper-two my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-two__swiper-slide position-relative">
@@ -146,12 +146,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next text-white" id="i0aum"></div>
+    <div class="swiper-button-next text-white" id="iiaj9"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <script>var items = document.querySelectorAll('#iwpi');
+  <script>var items = document.querySelectorAll('#i0ry');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 // Check if Swiper CSS is already added
@@ -208,105 +208,47 @@
         }
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#i3o6b');
+          var items = document.querySelectorAll('#irio8');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-// Check if Swiper CSS is already added
-        if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
-            // Dynamically add Swiper CSS to the head element
-            const swiperCssLink = document.createElement('link');
-            swiperCssLink.rel = 'stylesheet';
-            swiperCssLink.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
-            document.head.appendChild(swiperCssLink);
-        }
-        // Check if Swiper JS is already added
-        if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]')) {
-            // Dynamically add Swiper JS to the head element
-            const swiperJsScript = document.createElement('script');
-            swiperJsScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
-            document.head.appendChild(swiperJsScript);
-            // Wait for the Swiper JS to be loaded before initializing
-            swiperJsScript.onload = function () {
-                // Swiper initialization
-                // @ts-ignore
-                let swiper = new Swiper(".testimonial-swiper-two", {
+// Swiper initialization
+        // @ts-ignore
+        let swiper = new Swiper(".testimonial-swiper-two", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            // autoplay: true,
+            breakpoints: {
+                640: {
                     slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    // autoplay: true,
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                        1440: {
-                            slidesPerView: 4,
-                            spaceBetween: 60,
-                        },
-                        1800: {
-                            slidesPerView: 5,
-                            spaceBetween: 70
-                        }
-                    },
-                });
-            };
-        }
-        else {
-            // Swiper JS is already added, directly initialize Swiper
-            // @ts-ignore
-            let swiper = new Swiper(".testimonial-swiper-two", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    spaceBetween: 20,
                 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
                 },
-                // autoplay: true,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                    },
-                    1440: {
-                        slidesPerView: 4,
-                        spaceBetween: 60,
-                    },
-                    1800: {
-                        slidesPerView: 5,
-                        spaceBetween: 70
-                    }
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
                 },
-            });
-        }
+                1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 60,
+                },
+                1800: {
+                    slidesPerView: 5,
+                    spaceBetween: 70
+                }
+            },
+        });
 }.bind(items[i]))();
           }</script>
  </body>
