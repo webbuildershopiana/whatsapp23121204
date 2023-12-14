@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}.testimonial-swiper-one{height:100vh;}.testimonial-one__swiper-slide{height:100vh !important;}.testimonial-one__swiper-slide-content{bottom:15%;}.testimonial-two__swiper-slide{height:40vh !important;}.testimonial-two__swiper-slide-content{bottom:15%;}#ixy6j{padding:10px;}
+* { box-sizing: border-box; } body {margin: 0;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.hamburger2{display:none;}.bar2{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.hamburger3{display:none;}.bar3{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.hamburger4{display:none;}.bar4{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}.nav-menu{z-index:2000;}.nav-link{font-size:1.1rem;}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.hamburger2{display:block;cursor:pointer;}.hamburger2.active .bar2:nth-child(2){opacity:0;}.hamburger2.active .bar2:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger2.active .bar2:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.hamburger3{display:block;cursor:pointer;}.hamburger3.active .bar3:nth-child(2){opacity:0;}.hamburger3.active .bar3:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger3.active .bar3:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.nav-menu{display:none;position:absolute;left:-100%;top:100%;flex-direction:column;background-color:#fff;width:100%;text-align:center;transition:0.7s;padding:10px 0px;gap:0px !important;box-shadow:0 10px 27px rgba(0, 0, 0, 0.07);}.nav-menu.active{display:block;left:0;}.nav-item{margin:10px 0;}.hamburger4{display:block;cursor:pointer;}.hamburger4.active .bar4:nth-child(2){opacity:0;}.hamburger4.active .bar4:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger4.active .bar4:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -79,214 +79,147 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="ixy6j">
-   Insert your text here
-  </div>
-  <div id="if0r">
-   <div class="swiper w-100 testimonial-swiper-one my-4">
-    <div class="swiper-wrapper">
-     <div class="swiper-slide testimonial-one__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1700469339941-0768a5365344?q=80&amp;w=1812&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-one__swiper-slide-content">
-       <p class="fs-5 mb-2">First Slide</p><span>Some representative placeholder content for the first slide.</span>
-      </div>
+  <div id="icvf">
+   <nav class="navbar bg-white navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+     <a href="#" class="navbar-brand">Shopiana</a>
+     <div class="hamburger1">
+      <span class="bar1"></span><span class="bar1"></span><span class="bar1"></span>
      </div>
-     <div class="swiper-slide testimonial-one__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1699115174617-7e49afc54da5?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-one__swiper-slide-content">
-       <p class="fs-5 mb-2">Second Slide</p><span>Some representative placeholder content for the second slide.</span>
+     <div id="collapseId" class="collapse navbar-collapse">
+      <div class="navbar-nav">
+       <a href="#" class="nav-item nav-link active">Home</a><a href="#" class="nav-item nav-link">Profile</a>
+       <div class="nav-item dropdown">
+        <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">Messages</a>
+        <div class="dropdown-menu">
+         <a href="#" class="dropdown-item">Inbox</a><a href="#" class="dropdown-item">Sent</a><a href="#" class="dropdown-item">Drafts</a>
+        </div>
+       </div><a href="#" class="nav-item nav-link">About</a>
       </div>
-     </div>
-     <div class="swiper-slide testimonial-one__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1615639433680-16171300bed7?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-one__swiper-slide-content">
-       <p class="fs-5 mb-2">Third Slide</p><span>Some representative placeholder content for the Third slide.</span>
+      <div class="navbar-nav ms-auto">
+       <a href="#" class="nav-item nav-link">Login</a>
       </div>
      </div>
     </div>
-    <div class="swiper-button-next" id="ie2zi"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-   </div>
+   </nav>
   </div>
-  <div id="iyoc4">
-   <div class="swiper w-100 testimonial-swiper-two my-4">
-    <div class="swiper-wrapper">
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1625334666162-8ad10e7332d2?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">First Slide</p>
-      </div>
+  <div id="iyfvu">
+   <nav class="navbar navbar-expand-lg navbar-light px-3">
+    <div class="navbar-brand d-block d-lg-none">
+     <a href="#" class="text-decoration-none fs-3"> Shopiana </a>
+    </div>
+    <div class="hamburger2">
+     <span class="bar2"></span><span class="bar2"></span><span class="bar2"></span>
+    </div>
+    <div class="collapse navbar-collapse justify-content-center ps-1 animation pt-lg-0 pb-lg-0 pt-2 pb-4">
+     <ul class="navbar-nav w-100 flex justify-content-lg-evenly gap-lg-0 gap-4">
+      <li class="nav-item"><a aria-current="page" href="#" class="text-decoration-none">Home</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">Shop</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">Gallery</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">About us</a></li>
+     </ul>
+     <div class="navbar-brand d-none d-lg-block m-0">
+      <a href="#" class="text-decoration-none fs-3"> Shopiana </a>
      </div>
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1626947466156-cc845e20d93c?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">Second Slide</p>
-      </div>
-     </div>
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">Third Slide</p>
-      </div>
-     </div>
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1633269540827-728aabbb7646?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">Fourth Slide</p>
-      </div>
-     </div>
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://img.freepik.com/premium-photo/beautiful-natural-green-plant_480962-16316.jpg" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">Fifth Slide</p>
-      </div>
-     </div>
-     <div class="swiper-slide testimonial-two__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1631879742033-df44819e6a52?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
-      <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-two__swiper-slide-content text-center">
-       <p class="fs-5 mb-2">Sixt Slide</p>
-      </div>
+     <ul class="navbar-nav w-100 flex justify-content-lg-evenly gap-lg-0 gap-4 mt-lg-0 mt-4">
+      <li class="nav-item"><a href="#" class="text-decoration-none">Blog</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">Offer</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">Contact us</a></li>
+      <li class="nav-item"><a href="#" class="text-decoration-none">Pages</a></li>
+     </ul>
+    </div>
+   </nav>
+  </div>
+  <div id="i99w8">
+   <nav class="navbar navbar-expand-lg sticky-top bg-white p-3">
+    <div class="container">
+     <div class="hamburger3">
+      <span class="bar3"></span><span class="bar3"></span><span class="bar3"></span>
+     </div><a href="#" class="navbar-brand"><strong>Shopiana</strong></a>
+     <div id="collapseId-2" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+       <li class="nav-item"><a aria-current="page" href="#" class="nav-link mx-2 text-uppercase active">Offers</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Products</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Catalog</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">Services</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase">About</a></li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase"> Cart</a></li>
+       <li class="nav-item"><a href="#" class="nav-link mx-2 text-uppercase"> Account</a></li>
+      </ul>
      </div>
     </div>
-    <div class="swiper-button-next text-white" id="i8urh"></div>
-    <div class="swiper-button-prev text-white"></div>
-    <div class="swiper-pagination"></div>
-   </div>
+   </nav>
   </div>
-  <script>var items = document.querySelectorAll('#if0r');
+  <div id="iy3qo5">
+   <nav class="px-3 py-2 d-flex justify-content-between align-items-center position-relative">
+    <h1><a href="#" class="nav-logo fw-bold text-dark text-decoration-none fs-2">Shopiana</a></h1>
+    <ul class="nav-menu d-flex justify-content-between align-items-center mb-0 gap-4">
+     <li class="nav-item list-unstyled text-decoration-none"><a href="#" class="nav-link text-dark">Services</a></li>
+     <li class="nav-item list-unstyled text-decoration-none"><a href="#" class="nav-link text-dark">Blog</a></li>
+     <li class="nav-item list-unstyled text-decoration-none"><a href="#" class="nav-link text-dark">About</a></li>
+     <li class="nav-item list-unstyled text-decoration-none"><a href="#" class="nav-link text-dark">Contact</a></li>
+    </ul>
+    <div class="hamburger4">
+     <span class="bar4"></span><span class="bar4"></span><span class="bar4"></span>
+    </div>
+   </nav>
+  </div>
+  <script>var items = document.querySelectorAll('#icvf');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-const swiper = function () {
-            console.log('swiper function');
-            // Swiper initialization
-            // @ts-ignore
-            let swiper = new Swiper(".testimonial-swiper-one", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                autoplay: true,
+const hamburger = this.querySelectorAll(".hamburger1");
+        const navMenu = this.querySelectorAll(".navbar-collapse");
+        for (let i = 0; i < hamburger.length; i++) {
+            hamburger[i].addEventListener("click", function () {
+                hamburger[i].classList.toggle("active");
+                navMenu[i].classList.toggle("show");
             });
-        };
-        // Check if Swiper CSS is already added
-        if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
-            // Dynamically add Swiper CSS to the head element
-            const swiperCssLink = document.createElement('link');
-            swiperCssLink.rel = 'stylesheet';
-            swiperCssLink.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
-            document.head.appendChild(swiperCssLink);
         }
-        // Check if Swiper JS is already added
-        if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]')) {
-            console.log('Swiper added when not alreday exist!');
-            // Dynamically add Swiper JS to the head element
-            const swiperJsScript = document.createElement('script');
-            swiperJsScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
-            document.head.appendChild(swiperJsScript);
-            console.log(swiperJsScript);
-            // Wait for the Swiper JS to be loaded before initializing
-            swiperJsScript.onload = function () {
-                swiper();
-            };
-        }
-        else {
-            const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
-            console.log('Swiper added when alreday exist!');
-            console.log(swiperJsScript);
-            if (swiperJsScript) {
-                // swiperJsScript.onload = function () {
-                // Swiper JS is already added, directly initialize Swiper
-                // @ts-ignore
-                swiper();
-                // }
-            }
-        }
+        ;
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#iyoc4');
+          var items = document.querySelectorAll('#iyfvu');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-const swiper = function () {
-            console.log('testimonial swiper function two');
-            // @ts-ignore
-            let swiper = new Swiper(".testimonial-swiper-two", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                // autoplay: true,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                    },
-                    1440: {
-                        slidesPerView: 4,
-                        spaceBetween: 60,
-                    },
-                    1800: {
-                        slidesPerView: 5,
-                        spaceBetween: 70
-                    }
-                },
+const hamburger = this.querySelectorAll(".hamburger2");
+        const navMenu = this.querySelectorAll(".navbar-collapse");
+        for (let i = 0; i < hamburger.length; i++) {
+            hamburger[i].addEventListener("click", function () {
+                hamburger[i].classList.toggle("active");
+                navMenu[i].classList.toggle("show");
             });
-        };
-        // Check if Swiper CSS is already added
-        if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
-            // Dynamically add Swiper CSS to the head element
-            const swiperCssLink = document.createElement('link');
-            swiperCssLink.rel = 'stylesheet';
-            swiperCssLink.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
-            document.head.appendChild(swiperCssLink);
         }
-        // Check if Swiper JS is already added
-        if (!document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]')) {
-            console.log('Swiper added when not alreday exist!');
-            // Dynamically add Swiper JS to the head element
-            const swiperJsScript = document.createElement('script');
-            swiperJsScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
-            document.head.appendChild(swiperJsScript);
-            console.log(swiperJsScript);
-            // Wait for the Swiper JS to be loaded before initializing
-            swiperJsScript.onload = function () {
-                // Swiper initialization
-                swiper();
-            };
+        ;
+}.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#i99w8');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+const hamburger = this.querySelectorAll(".hamburger3");
+        const navMenu = this.querySelectorAll(".navbar-collapse");
+        for (let i = 0; i < hamburger.length; i++) {
+            hamburger[i].addEventListener("click", function () {
+                hamburger[i].classList.toggle("active");
+                navMenu[i].classList.toggle("show");
+            });
         }
-        else {
-            const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
-            console.log('Swiper added when alreday exist!');
-            console.log(swiperJsScript);
-            if (swiperJsScript) {
-                // swiperJsScript.onload = function () {
-                // Swiper JS is already added, directly initialize Swiper
-                swiper();
-                // }
-            }
+        ;
+}.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#iy3qo5');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+const hamburger = this.querySelectorAll(".hamburger4");
+        const navMenu = this.querySelectorAll(".nav-menu");
+        for (let i = 0; i < hamburger.length; i++) {
+            hamburger[i].addEventListener("click", function () {
+                hamburger[i].classList.toggle("active");
+                navMenu[i].classList.toggle("active");
+            });
         }
+        ;
 }.bind(items[i]))();
           }</script>
  </body>
