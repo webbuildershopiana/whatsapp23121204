@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}.testimonial-swiper-one{height:100vh;}.testimonial-one__swiper-slide{height:100vh !important;}.testimonial-one__swiper-slide-content{bottom:15%;}.testimonial-two__swiper-slide{height:40vh !important;}.testimonial-two__swiper-slide-content{bottom:15%;}
+* { box-sizing: border-box; } body {margin: 0;}.testimonial-swiper-one{height:100vh;}.testimonial-one__swiper-slide{height:100vh !important;}.testimonial-one__swiper-slide-content{bottom:15%;}.testimonial-two__swiper-slide{height:40vh !important;}.testimonial-two__swiper-slide-content{bottom:15%;}#id59f{padding:10px;}
 
 </style>
 
@@ -79,7 +79,10 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="ijjq">
+  <div id="id59f">
+   Insert your text here
+  </div>
+  <div id="i70z">
    <div class="swiper w-100 testimonial-swiper-one my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
@@ -89,7 +92,7 @@
       </div>
      </div>
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
-      <img src="https://images.unsplash.com/photo-1699115174617-7e49afc54da5?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100">
+      <img src="https://images.unsplash.com/photo-1699115174617-7e49afc54da5?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swiper-image" class="swiper-image w-100 h-100" id="izngj">
       <div class="position-absolute w-100 text-white d-flex justify-content-center align-items-center flex-column testimonial-one__swiper-slide-content">
        <p class="fs-5 mb-2">Second Slide</p><span>Some representative placeholder content for the second slide.</span>
       </div>
@@ -101,12 +104,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next" id="i1kt6"></div>
+    <div class="swiper-button-next" id="ix81m"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <div id="imdfl">
+  <div id="ijlwd">
    <div class="swiper w-100 testimonial-swiper-two my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-two__swiper-slide position-relative">
@@ -146,12 +149,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next text-white" id="ixhq8"></div>
+    <div class="swiper-button-next text-white" id="iwfyr"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <script>var items = document.querySelectorAll('#ijjq');
+  <script>var items = document.querySelectorAll('#i70z');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 const swiper = function () {
@@ -208,46 +211,48 @@ const swiper = function () {
         }
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#imdfl');
+          var items = document.querySelectorAll('#ijlwd');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-// @ts-ignore
-        let swiper = new Swiper(".testimonial-swiper-two", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-            // autoplay: true,
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
+setTimeout(() => {
+            // @ts-ignore
+            let swiper = new Swiper(".testimonial-swiper-two", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
                 },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
+                // autoplay: true,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                        spaceBetween: 60,
+                    },
+                    1800: {
+                        slidesPerView: 5,
+                        spaceBetween: 70
+                    }
                 },
-                1440: {
-                    slidesPerView: 4,
-                    spaceBetween: 60,
-                },
-                1800: {
-                    slidesPerView: 5,
-                    spaceBetween: 70
-                }
-            },
-        });
+            });
+        }, 2000);
 }.bind(items[i]))();
           }</script>
  </body>
