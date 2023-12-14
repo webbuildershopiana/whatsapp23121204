@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}.testimonial-swiper-one{height:100vh;}.testimonial-one__swiper-slide{height:100vh !important;}.testimonial-one__swiper-slide-content{bottom:15%;}.testimonial-two__swiper-slide{height:40vh !important;}.testimonial-two__swiper-slide-content{bottom:15%;}
+* { box-sizing: border-box; } body {margin: 0;}.testimonial-swiper-one{height:100vh;}.testimonial-one__swiper-slide{height:100vh !important;}.testimonial-one__swiper-slide-content{bottom:15%;}.testimonial-two__swiper-slide{height:40vh !important;}.testimonial-two__swiper-slide-content{bottom:15%;}#iihbj{padding:10px;}
 
 </style>
 
@@ -79,7 +79,10 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="ih2s">
+  <div id="iihbj">
+   Insert your text here
+  </div>
+  <div id="izpn">
    <div class="swiper w-100 testimonial-swiper-one my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
@@ -101,12 +104,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-next" id="ioxfa"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <div id="itv36">
+  <div id="if9g7">
    <div class="swiper w-100 testimonial-swiper-two my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-two__swiper-slide position-relative">
@@ -146,12 +149,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next text-white"></div>
+    <div class="swiper-button-next text-white" id="iohpx"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <script>var items = document.querySelectorAll('#ih2s');
+  <script>var items = document.querySelectorAll('#izpn');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 // Check if Swiper CSS is already added
@@ -195,7 +198,9 @@
             const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
             console.log('Swiper added when alreday exist!');
             console.log(swiperJsScript);
-            swiperJsScript.onload = function () {
+            if (swiperJsScript) {
+                console.log('swiper js scrpt is exist');
+                // swiperJsScript.onload = function () {
                 // Swiper JS is already added, directly initialize Swiper
                 // @ts-ignore
                 let swiper = new Swiper(".testimonial-swiper-one", {
@@ -212,11 +217,12 @@
                     },
                     autoplay: true,
                 });
-            };
+                // }
+            }
         }
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#itv36');
+          var items = document.querySelectorAll('#if9g7');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 // Check if Swiper CSS is already added
@@ -281,7 +287,9 @@
             const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
             console.log('Swiper added when alreday exist!');
             console.log(swiperJsScript);
-            swiperJsScript.onload = function () {
+            if (swiperJsScript) {
+                console.log('swiper js scrpt is exist');
+                // swiperJsScript.onload = function () {
                 // Swiper JS is already added, directly initialize Swiper
                 // @ts-ignore
                 let swiper = new Swiper(".testimonial-swiper-two", {
@@ -320,7 +328,8 @@
                         }
                     },
                 });
-            };
+                // }
+            }
         }
 }.bind(items[i]))();
           }</script>
