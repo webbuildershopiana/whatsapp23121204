@@ -79,7 +79,7 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="iglr">
+  <div id="if0r">
    <div class="swiper w-100 testimonial-swiper-one my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
@@ -101,12 +101,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next" id="i2o6h"></div>
+    <div class="swiper-button-next" id="ie2zi"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <div id="i21eh">
+  <div id="iyoc4">
    <div class="swiper w-100 testimonial-swiper-two my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-two__swiper-slide position-relative">
@@ -146,15 +146,34 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next text-white" id="ikrgm"></div>
+    <div class="swiper-button-next text-white" id="i8urh"></div>
     <div class="swiper-button-prev text-white"></div>
-    <div class="swiper-pagination" id="i1a49"></div>
+    <div class="swiper-pagination"></div>
    </div>
   </div>
-  <script>var items = document.querySelectorAll('#iglr');
+  <script>var items = document.querySelectorAll('#if0r');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-// Check if Swiper CSS is already added
+const swiper = function () {
+            console.log('swiper function');
+            // Swiper initialization
+            // @ts-ignore
+            let swiper = new Swiper(".testimonial-swiper-one", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                autoplay: true,
+            });
+        };
+        // Check if Swiper CSS is already added
         if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
             // Dynamically add Swiper CSS to the head element
             const swiperCssLink = document.createElement('link');
@@ -172,23 +191,7 @@
             console.log(swiperJsScript);
             // Wait for the Swiper JS to be loaded before initializing
             swiperJsScript.onload = function () {
-                console.log('Swiper added when not alreday exist!');
-                // Swiper initialization
-                // @ts-ignore
-                let swiper = new Swiper(".testimonial-swiper-one", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    autoplay: true,
-                });
+                swiper();
             };
         }
         else {
@@ -199,29 +202,56 @@
                 // swiperJsScript.onload = function () {
                 // Swiper JS is already added, directly initialize Swiper
                 // @ts-ignore
-                let swiper = new Swiper(".testimonial-swiper-one", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    autoplay: true,
-                });
+                swiper();
                 // }
             }
         }
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#i21eh');
+          var items = document.querySelectorAll('#iyoc4');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
-// Check if Swiper CSS is already added
+const swiper = function () {
+            console.log('testimonial swiper function two');
+            // @ts-ignore
+            let swiper = new Swiper(".testimonial-swiper-two", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                // autoplay: true,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                        spaceBetween: 60,
+                    },
+                    1800: {
+                        slidesPerView: 5,
+                        spaceBetween: 70
+                    }
+                },
+            });
+        };
+        // Check if Swiper CSS is already added
         if (!document.querySelector('link[href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"]')) {
             // Dynamically add Swiper CSS to the head element
             const swiperCssLink = document.createElement('link');
@@ -240,43 +270,7 @@
             // Wait for the Swiper JS to be loaded before initializing
             swiperJsScript.onload = function () {
                 // Swiper initialization
-                // @ts-ignore
-                let swiper = new Swiper(".testimonial-swiper-two", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    // autoplay: true,
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                        1440: {
-                            slidesPerView: 4,
-                            spaceBetween: 60,
-                        },
-                        1800: {
-                            slidesPerView: 5,
-                            spaceBetween: 70
-                        }
-                    },
-                });
+                swiper();
             };
         }
         else {
@@ -286,43 +280,7 @@
             if (swiperJsScript) {
                 // swiperJsScript.onload = function () {
                 // Swiper JS is already added, directly initialize Swiper
-                // @ts-ignore
-                let swiper = new Swiper(".testimonial-swiper-two", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    // autoplay: true,
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                        1440: {
-                            slidesPerView: 4,
-                            spaceBetween: 60,
-                        },
-                        1800: {
-                            slidesPerView: 5,
-                            spaceBetween: 70
-                        }
-                    },
-                });
+                swiper();
                 // }
             }
         }
