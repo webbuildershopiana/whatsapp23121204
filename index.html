@@ -79,7 +79,7 @@
 		<html>
  <head></head>
  <body id="i212" class="bg-secondary pb-5">
-  <div id="irfj">
+  <div id="ih2s">
    <div class="swiper w-100 testimonial-swiper-one my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-one__swiper-slide position-relative">
@@ -101,12 +101,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next" id="itmwo"></div>
+    <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <div id="ifpit">
+  <div id="itv36">
    <div class="swiper w-100 testimonial-swiper-two my-4">
     <div class="swiper-wrapper">
      <div class="swiper-slide testimonial-two__swiper-slide position-relative">
@@ -146,12 +146,12 @@
       </div>
      </div>
     </div>
-    <div class="swiper-button-next text-white" id="ievdh"></div>
+    <div class="swiper-button-next text-white"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination"></div>
    </div>
   </div>
-  <script>var items = document.querySelectorAll('#irfj');
+  <script>var items = document.querySelectorAll('#ih2s');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 // Check if Swiper CSS is already added
@@ -195,28 +195,28 @@
             const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
             console.log('Swiper added when alreday exist!');
             console.log(swiperJsScript);
-            // swiperJsScript.onload = function () {
-            // Swiper JS is already added, directly initialize Swiper
-            // @ts-ignore
-            let swiper = new Swiper(".testimonial-swiper-one", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                autoplay: true,
-            });
-            // }
+            swiperJsScript.onload = function () {
+                // Swiper JS is already added, directly initialize Swiper
+                // @ts-ignore
+                let swiper = new Swiper(".testimonial-swiper-one", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                    },
+                    autoplay: true,
+                });
+            };
         }
 }.bind(items[i]))();
           }
-          var items = document.querySelectorAll('#ifpit');
+          var items = document.querySelectorAll('#itv36');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
 // Check if Swiper CSS is already added
@@ -281,46 +281,46 @@
             const swiperJsScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
             console.log('Swiper added when alreday exist!');
             console.log(swiperJsScript);
-            // swiperJsScript.onload = function () {
-            // Swiper JS is already added, directly initialize Swiper
-            // @ts-ignore
-            let swiper = new Swiper(".testimonial-swiper-two", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                // autoplay: true,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
+            swiperJsScript.onload = function () {
+                // Swiper JS is already added, directly initialize Swiper
+                // @ts-ignore
+                let swiper = new Swiper(".testimonial-swiper-two", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
                     },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
                     },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
+                    // autoplay: true,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                        1440: {
+                            slidesPerView: 4,
+                            spaceBetween: 60,
+                        },
+                        1800: {
+                            slidesPerView: 5,
+                            spaceBetween: 70
+                        }
                     },
-                    1440: {
-                        slidesPerView: 4,
-                        spaceBetween: 60,
-                    },
-                    1800: {
-                        slidesPerView: 5,
-                        spaceBetween: 70
-                    }
-                },
-            });
-            // }
+                });
+            };
         }
 }.bind(items[i]))();
           }</script>
